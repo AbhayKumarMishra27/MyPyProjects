@@ -52,7 +52,7 @@ def display_expenses():
     
     print("\n--- All Expenses ---")
     for expense in expenses:
-        print(f"{expense['date']} - ${expense['amount']} - {expense['category']} - {expense['description']}")
+        print(f"{expense['date']} - ₹{expense['amount']} - {expense['category']} - {expense['description']}")
     print()
 
 def display_summary():
@@ -104,6 +104,4 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.\n")
-
-if __name__ == "__main__":
-    main()
+main()
